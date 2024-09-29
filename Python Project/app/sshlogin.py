@@ -115,9 +115,15 @@ def save_logs(logs):
         log_number += 1
     log_filename = f"logs/sshloginlogs_{log_number}.txt"
 
+    # Inspect logs before saving
+    print("Logs to be saved:", logs)  # Debug: Print logs to verify structure
+
     # Write all logs into a single file
     with open(log_filename, 'w') as file:
         for log in logs:
-            file.write(log + '\n')
-
-    print(f"Logs saved to {log_filename}")
+            if isinstance(log, tuple):
+                # If it's a tuple (timestamp, log), write the log part
+                file.write(log[1] + '\n')
+            else:
+                # If it's already a string, just write it directly
+                file.write(str(log) + '\n')
