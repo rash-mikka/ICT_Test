@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+button {
+    padding: 10px 20px;
+    align-items: center;
+    background-color: #0e8869;
+    color: white;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-size: 20px;
+    font-style: bold;
+    cursor: pointer;
+    width: 20%;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #45a098;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    /* Optional: makes the nav flexible */
+    padding: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+nav form {
+    display: flex;
+    /* Align items inside the nav form horizontally */
+    align-items: center;
+    /* Center items vertically */
+    justify-items: space-between;
+    min-width: 1000px;
+}
+
+nav form label {
+    width: 80%;
+    align-items: center;
+    margin-right: 10px;
+    /* Space between label and button */
+    font-size: 24px;
+    /* Adjust font size */
+}
+
+nav form button.btn {
+    width: 20%;
+}
+
+/* QUICK CREATE BUTTON */
+form .qc {}
+
+/* Custom Create Form */
+main form {
+    max-width: 1500px;
+    min-width: 600px;
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: rgb(78, 78, 78);
+    border-radius: 8px;
+    border: 2px solid #000000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    width: 30%;
+    /* Adjust width for labels */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 70%;
+    font-size: 16px;
+}
+
+select {
+    background-color: rgb(151, 150, 150);
+    cursor: pointer;
+}
+
+.input-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="quick-gen"] {
+    padding: 5px;
+    align-self: left;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 20%;
+}
+
+input[type="submit"] {
+    padding: 5px;
+    align-self: right;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 20%;
+}
+
+.btn {
+    background-color: #4caf9e;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav {
+    list-style: none;
+}

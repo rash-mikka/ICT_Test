@@ -1,0 +1,118 @@
+body {
+    font-family: "Tahoma", "Verdana", "Arial", sans-serif;
+    background-color: #008080; /* Windows 98 teal background */
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    height: 100vh; /* Full height of the viewport */
+}
+
+/* Taskbar styling */
+.taskbar {
+    background-color: #C0C0C0; 
+    border-top: 2px solid #808080; 
+    height: 40px; 
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    width: 100%;
+}
+
+/* Start button styling */
+.start-btn {
+    background-color: #C0C0C0;
+    color: black;
+    padding: 5px 5px; /* Padding for the button */
+    margin-right: 5px;
+    border: 2px solid #808080; /* Dark gray border */
+    cursor: pointer;
+    box-shadow: inset 1px 1px #ffffff, inset -1px -1px #404040; /* 3D effect */
+    font-weight: bold;
+}
+
+/* Navigation list */
+nav {
+    margin-left:; /* Push navigation to the right */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+li {
+    margin-left: 2px; /* Space between buttons */
+}
+
+/* Navigation button styling */
+.nav-btn {
+    background-color: #C0C0C0; /* Button face color */
+    color: #000000;
+    border: 2px solid #808080; /* Dark gray border */
+    padding: 4px 9px; /* Padding for the button */
+    width: 200px;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: left;
+    cursor: pointer;
+    box-shadow: inset 1px 1px #ffffff, inset -1px -1px #808080; /* 3D effect */
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect for buttons */
+.start-btn:hover, .nav-btn:hover {
+    background-color: #dcdcdc; /* Lighter background on hover */
+    border-color: #404040; /* Darker border on hover */
+    box-shadow: inset 1px 1px #dcdcdc, inset -1px -1px #404040; /* Sharper shadow effect */
+}
+
+/* Window title and content */
+.window-titlebar {
+    background-color: #000080; /* Dark blue */
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px; 
+    height: 25px;
+    box-shadow: inset -1px -1px #404040, inset 1px 1px #FFFFFF;
+}
+
+/* Window content */
+.window {
+    width: 400px;
+    border: 2px solid #808080; /* Dark gray */
+    background-color: #C0C0C0; /* Light gray */
+    box-shadow: 2px 2px #404040, -2px -2px #FFFFFF; /* 3D window effect */
+    padding: 10px;
+    margin-top: 10px;
+    align-self: center; /* Center window */
+}
+
+/* Close button styling */
+.close-btn {
+    width: 16px;
+    height: 16px;
+    background-color: #C0C0C0; /* Windows 98 button face */
+    border: 2px solid #808080; /* Dark gray border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: inset 1px 1px #ffffff, inset -1px -1px #404040; /* 3D effect */
+    font-weight: bold;
+    color: black;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+/* Title and button placement */
+.window-title {
+    flex-grow: 1;
+    text-align: left;
+    padding-left: 5px;
+}
